@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        input.delegate = self
     }
     @IBAction func guess(_ sender: Any) {
         //랜덤 숫자 생성
